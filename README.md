@@ -3,11 +3,12 @@ Curso de Programación Avanzada 2017 - UNAP
 
 ## Unidad 1
 
-- Historia de C/C++
-- Compilador
-- Estructura básica de un programa C++
-- Variables y tipos de datos
-- Tipos de operadores
-- Flujos de control
-- Funciones
-- Manejo de ficheros
+1. Historia de C/C++
+2. Compilador
+3. Estructura básica de un programa C++
+4. Variables y tipos de datos
+5. Tipos de operadores
+6. Flujos de control
+7. Funciones
+8. Argumentos main
+9. Archivos
