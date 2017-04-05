@@ -11,6 +11,8 @@ int main( ) {
   // Fecha/tiempo actual basada en la configuración del sistema
   // Resultado en número de segundos desde Enero 1, 1970
   time_t now = time(0);
+  cout << "Numero de seg: " << now << endl;
+  cout << &now << endl;
 
   // Convierte los segundos al formato: Mon Mar 20 20:20:05 2017
   char* dt = ctime(&now);

@@ -158,7 +158,7 @@ Las siguientes funciones verifican estados específicos del stream. Todas estas 
 Retorna `true` si una operación de lectura o escritura falla. Por ejemplo, si intentamos escribir en un archivo que no ha sido abierto para escritura o no hay espacio suficiente.
 
 - `fail()`
-Retorna `true` en los mismos casos que `bad`, pero también en el caso en que un error de formato ocurra, como cuando se intenta leer un entero pero se encuentra o leer un caracter.
+Retorna `true` en los mismos casos que `bad`, pero también en el caso en que un error de formato ocurra, como cuando se intenta leer un entero pero se encuentra o lee un caracter.
 
 - `eof()`
 Retorna `true` si un archivo abierto para lectura ha llegado a su fin.

@@ -17,7 +17,8 @@ int main () {
    // evalúa como 0.
    // Ej: time(0) o time(NULL) retorna la fecha/hora actual en segundos desde 1
    // Enero 1, 1970
-   srand((unsigned) time(NULL));
+   srand(time(0));
+
    //srand(time(0));
 
    // La semilla puede ser cualquier valor entero.

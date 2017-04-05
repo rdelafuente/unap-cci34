@@ -3,7 +3,7 @@
 #include <fstream>
 // Directiva para manejar strings
 #include <string>
-// Para generae números aleatorios
+// Para generar números aleatorios
 #include <cstdlib>
 // Funciones de tiempo (para generar la semilla del número aleatorio en función del tiempo actual)
 #include <ctime>
@@ -79,9 +79,9 @@ int main()
 
 
   cout << endl;
-  cout << "################################" << endl;
-  cout << "Uso de fstream en modo escritura" << endl;
-  cout << "################################" << endl;
+  cout << "########################################" << endl;
+  cout << "Uso de fstream en modo lectura/escritura" << endl;
+  cout << "########################################" << endl;
   cout << endl;
 
   // Abrimos el archivo en modo: escritura (ios::out),
