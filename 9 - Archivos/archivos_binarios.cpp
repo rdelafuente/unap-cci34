@@ -55,6 +55,9 @@ int main()
     // Reposicionamos el puntero de lectura (para leer lo que acabamos de guardar)
     archivo2.seekg(0, ios::beg);
 
+    //archivo2.close();
+    //archivo2.open("data_int.bin", ios::in | ios::binary);
+
     // Leemos el entero que acabamos de guardar
     int contenido;
     archivo2.read((char*) &contenido, sizeof(int));

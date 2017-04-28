@@ -48,17 +48,20 @@ int main()
 
 	cout << endl;
 
+	unsigned int prueba = -1;
+	cout << prueba << endl;
+
 	// signed char puede almancenar hasta 256 valores únicos, es decir de 0 a 255
 	// ¿Qué pasa si almacenamos números más grandes?
-	signed char a = 300;
-	signed char b = 257;
+	//signed char a = 300;
+	//signed char b = 257;
 
 
 	// R: El compilador realiza una conversión implícita a int, restando 256 (2^8)
 	// al valor original (overflow)
 
 	// La suma resultante debería ser 45
-	cout << "signed char a + signed char b = " << a + b << endl;
+	//cout << "signed char a + signed char b = " << a + b << endl;
 
 	// ¿Es posible conocer el valor mínimo y máximo que puede almancenar cada tipo de variable?
 	// ¿Los valores pueden variar entre una arquitectura y otra?

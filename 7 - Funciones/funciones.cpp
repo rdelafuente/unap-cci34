@@ -4,14 +4,14 @@ using namespace std;
 
 // ------------------- Prototipo de funciones
 
-int sumar (int a, int b);
+int sumar (int, int);
 
 // No es necesario especificar el nombre de las variables
 int restar (int, int);
 
 // Sobrecarga de la función sumar.
 // Esta función retorna y acepta variables del tipo double
-double sumar(double, double);
+double sumar (double, double);
 
 // ------------------- Main
 
