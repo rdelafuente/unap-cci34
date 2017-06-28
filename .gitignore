@@ -3,3 +3,5 @@ out/*
 private/*
 test.cpp
 recursividad.md
+*.bin
+*.txt

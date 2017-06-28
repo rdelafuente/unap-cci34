@@ -27,7 +27,7 @@ Las operaciones de E/S (entrada/salida) también son soportadas:
 
 ```cpp
 cin >> cadena;
-cout >> "La cadena ingresada es: " << cadena << endl;
+cout << "La cadena ingresada es: " << cadena << endl;
 ```
 
 Tomar en cuenta que si se necesita leer una cadena compuesta **por múltiples palabras** o se desea leer **una línea a la vez**, se debe utilizar la función `getline`:
@@ -127,6 +127,14 @@ for(iterador = cadena.begin(); iterador != cadena.end(); iterador++)
 
 Nótese que `cadena.end()` está fuera del término del string, por lo tanto no debemos imprimirlo. `cadena.begin()` representa el primer caracter del string.
 
+```cpp
+string::reverse_iterator rit
+for (rit = str.rbegin(); rit != str.rend(); rit++)
+{
+    cout << * rit;
+}
+```
+
 > Es muy importante saber que usar iteradores sobre strings que son **modificados** podría generar resultados inesperados, por ende se sugiere que sólo se usen cuando estemos seguros que el string no sufrirá modificaciones a lo largo de la ejecución.
 
 ## Búsqueda y sub-cadenas
@@ -153,9 +161,11 @@ for(i = cadena.find("es", 0); i != string::npos; i = cadena.find("es", i))
 cout << "Apariciones: " << apariciones << endl;
 ```
 
-De forma similar, se puede utilizar la función `rfind()` exactamente de la misma manera, pero en vez de comenzar buscando desde el inicio, se haría desde el final del string. Tomar en cuenra que la coincidencia de palabras se sigue haciendo de izquierda a derecha.
+De forma similar, se puede utilizar la función `rfind()` exactamente de la misma manera, pero en vez de comenzar buscando desde el inicio, se haría desde el final del string. Tomar en cuenta que la coincidencia de palabras se sigue haciendo de izquierda a derecha.
 
 **¿Cómo quedaría el ejemplo anterior utilizando la `rfind()`?**
+
+<div class="page-break"></div>
 
 ### Función `substr()`
 
@@ -239,7 +249,7 @@ Es importante señalar que el valor retornado es un valor constante, es decir, e
 
 ```cpp
 string cadena = "Hola Mundo!";
-const char* cadena_c = my_string.c_str();
+const char* cadena_c = cadena.c_str();
 
 cout << cadena_c << endl;
 cout << strlen(cadena_c));
