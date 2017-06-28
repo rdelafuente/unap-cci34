@@ -12,3 +12,8 @@ Curso de Programación Avanzada 2017 - UNAP
 7. Funciones
 8. Argumentos main
 9. Archivos
+10. Strings
+11. STL
+12. Algorithm
+13. Estructura de datos
+14. Recursividad
