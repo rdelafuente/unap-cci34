@@ -27,7 +27,7 @@ int main()
   address_t *pDireccion;
 
   pPersona = &persona;
-  pDireccion = &pPersona->direccion;
+  pDireccion = &(pPersona->direccion);
 
   cout << pPersona->nombre << endl;
   cout << pDireccion->calle << endl;
